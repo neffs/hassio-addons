@@ -1,0 +1,30 @@
+{
+  "name": "deCONZ",
+  "version": "2.04.99",
+  "slug": "deconz",
+  "description": "deCONZ",
+  "startup": "services",
+  "boot": "auto",
+  "hassio_api": false,
+  "homeassistant_api": false,
+  "host_network": true,
+  "webui": "http://[HOST]:[PORT:8234]/pwa/login.html#host/[HOST]:8234",
+  "auto_uart":true,
+  "map": [
+    "config:rw"
+  ],
+  "options": {
+    "httpport": 8234,
+    "wsport": 8235,
+    "conbee": true
+  },
+  "schema": {
+    "httpport": "port",
+    "wsport": "port",
+    "conbee": "bool"
+  },
+  "ports": {
+    "8234/tcp": 8234,
+    "8235/tcp": 8235
+  }
+}
