@@ -10,8 +10,14 @@ declare -a options
 
 hass.log.info 'Starting the deCONZ server'
 
+if hass.config.true 'xpra'; then
+  xpra start --bind-tcp=0.0.0.0:8236 :100
+  export DISPLAY=:100
+else
+  options+=(-platform minimal)
+fi
+
 # Non-interactive
-options+=(-platform minimal)
 
 # Connect to zigbee adapter
 options+=(--auto-connect=1)
