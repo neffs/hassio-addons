@@ -1,6 +1,6 @@
-# deCONZ Addon for Hass.io
+# deCONZ Addon for Hass.io - DEPRECATED
 
-This is a beta addon including the deCONZ Zigbee software from dresden elektronik. 
+This plugin is not updated anymore. Please use [this plugin](https://github.com/marthoc/hassio-addons) instead.
 
 Add https://github.com/neffs/hassio-addons as a repository URL. 
 
